@@ -1,0 +1,19 @@
+Version 0.0:
+---------------------
+Font-end Completed:
+1.Homepage
+2.About
+3.Sign in
+4.sign up
+
+Version 0.1:
+---------------------
+Font-end Completed:
+1.News
+  a)PC
+  b)PlayStaion
+  c)XBox
+  d)Mobile
+
+
+
