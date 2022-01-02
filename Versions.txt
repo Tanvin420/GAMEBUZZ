@@ -23,3 +23,6 @@ Full Front-end completed except
 2.Contact  
 3.Become writer
 
+Version 0.3:
+---------------------
+Minor change in title
