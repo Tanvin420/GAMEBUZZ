@@ -649,7 +649,20 @@ ol {
 
 .product__item {
 	margin-bottom: 30px;
+	transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
 }
+.product__item:hover {
+    transform: scale(1.1);
+  }
+
+  .product__item:video {
+	width: 100%;
+	height: auto;
+  }
 
 .product__item__pic {
 	height: 325px;
@@ -2181,7 +2194,7 @@ ol {
 		border-radius: 0;
 		background-color: #222;
 		position: absolute;
-		right: 0;
+		right: 0; 
 		top: 9px;
 	}
 	.slicknav_nav .slicknav_arrow {

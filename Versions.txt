@@ -1,6 +1,6 @@
 Version 0.0:
 ---------------------
-Font-end Completed:
+Front-end Completed:
 1.Homepage
 2.About
 3.Sign in
@@ -8,12 +8,18 @@ Font-end Completed:
 
 Version 0.1:
 ---------------------
-Font-end Completed:
+Front-end Completed:
 1.News
   a)PC
   b)PlayStaion
   c)XBox
   d)Mobile
 
-
+Version 0.2:
+---------------------
+Front-end Completed:
+Full Front-end completed except 
+1.Privacy 
+2.Contact  
+3.Become writer
 
