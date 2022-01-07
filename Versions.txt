@@ -26,3 +26,9 @@ Full Front-end completed except
 Version 0.3:
 ---------------------
 Minor change in title
+
+Version 0.4:
+---------------------
+Functinal comment section in post, review and video.
+
+

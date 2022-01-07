@@ -131,29 +131,23 @@ Similarly, the “GTAV-inspired modern controls” promised in this collection�
                             <a href="#">Single-player</a>
                         </div>
                             <div class="blog__details__comment">
-                                <h4>3 Comments</h4>
+                                <h4>Comments</h4>
                                 <div class="blog__details__comment__item">
                                     <div class="blog__details__comment__item__pic">
                                         <img src="img/blog/details/comment-1.png" alt="">
                                     </div>
                                     <div class="blog__details__comment__item__text">
-                                        <span>Sep 08, 2020</span>
                                         <h5>John Smith</h5>
                                         <p>We need this in GTA Online, it has many animations you can do, but we need one where you do a little dance and michael jackson crotch grab.</p>
-                                        <a href="#">Like</a>
-                                        <a href="#">Reply</a>
                                     </div>
                                 </div>
-                                <div class="blog__details__comment__item blog__details__comment__item--reply">
+                                <div class="blog__details__comment__item blog__details__comment__item">
                                     <div class="blog__details__comment__item__pic">
                                         <img src="img/blog/details/comment-2.png" alt="">
                                     </div>
                                     <div class="blog__details__comment__item__text">
-                                        <span>Sep 08, 2020</span>
                                         <h5>Elizabeth Perry</h5>
                                         <p>Everytime I open my autosave file the game crashes back to the Xbox home menu, I tried uninstalling it and reinstalling it but nothing changed. I can make a new game but can’t load my main one.</p>
-                                        <a href="#">Like</a>
-                                        <a href="#">Reply</a>
                                     </div>
                                 </div>
                                 <div class="blog__details__comment__item">
@@ -161,30 +155,29 @@ Similarly, the “GTAV-inspired modern controls” promised in this collection�
                                         <img src="img/blog/details/comment-3.png" alt="">
                                     </div>
                                     <div class="blog__details__comment__item__text">
-                                        <span>Sep 08, 2020</span>
                                         <h5>Adrian Coleman</h5>
                                         <p>I bought the definitive edition for ps4 and my Version is stuck at 1:02. Anyone know a solution to this I looked everywhere. I downloaded it and it not downloading 1:03 or higher im getting anoyyed. Spent so much money on this. There is also no fog option for San Andreas so IK something is up.</p>
-                                        <a href="#">Like</a>
-                                        <a href="#">Reply</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="blog__details__form">
                                 <h4>Leave A Commnet</h4>
-                                <form action="#">
+                                <form  id="postComment" action="#">
+							    <fieldset>
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <input type="text" placeholder="Name">
+                                            <input type="text" placeholder="Name" id="name">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <input type="text" placeholder="Email">
+                                            <input type="text" placeholder="Email" id="email">
                                         </div>
                                         <div class="col-lg-12">
-                                            <textarea placeholder="Message"></textarea>
+                                            <textarea placeholder="Message" id="message"></textarea>
                                             <button type="submit" class="site-btn">Send Message</button>
                                         </div>
                                     </div>
-                                </form>
+							    </fieldset>	
+                             </form>
                             </div>
                         </div>
                     </div>
@@ -250,6 +243,27 @@ Similarly, the “GTAV-inspired modern controls” promised in this collection�
         <script src="js/jquery.slicknav.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+	    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+        <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyB36JuOa15kEjedPdMe0UfqeNgAV8-atxI",
+          authDomain: "gamebuzz-8aad2.firebaseapp.com",
+          databaseURL: "https://gamebuzz-8aad2-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "gamebuzz-8aad2",
+          storageBucket: "gamebuzz-8aad2.appspot.com",
+          messagingSenderId: "90398885374",
+          appId: "1:90398885374:web:e9835ee5653a5fbe8d2caf",
+          measurementId: "G-LS91N1YW40"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        const db2=firebase.firestore();
+      </script>
+	
+	<script src="js/postComment.js"></script>
 
     </body>
 
