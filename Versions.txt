@@ -41,6 +41,8 @@ Version 0.6:
 ---------------------
 Become Author page completed.
 
-
+Version 0.7
+---------------------
+Google authuintication
 
 
