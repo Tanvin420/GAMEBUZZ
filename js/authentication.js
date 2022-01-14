@@ -1,22 +1,41 @@
+let v=0;
 window.onload= () => {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
+            v=0;
             var email = user.email;
             var user = firebase.auth().currentUser;
             document.getElementById("loginState").innerHTML = "person";
-            document.getElementById("color").style.color = "green";
-            (user != null) 
+            document.getElementById("color").style.color = "green"; 
+            if(user != null){
                 var email_id = user.email;
                 document.getElementById("user").innerHTML = "User : " + email_id;
+                document.getElementById("loggedIn").innerHTML="Logged In";
+            }
             
         }
         else{
+            v=1;
             document.getElementById("SignedIn").style.display = "none";
             document.getElementById("loginState").innerHTML = "person_off";
             document.getElementById("color").style.color = "red";
+
+           
         }
     });
 
+}
+
+function becomeAuth()
+{   if(v==1)
+    {
+        document.getElementById("BecomeAuth").style.display="block";
+    }
+    else
+    {  
+        window.location.replace("./become_auth.html");
+        document.getElementById("BecomeAuth").style.display="none";
+    }
 }
 
 function signUp(){
@@ -44,6 +63,7 @@ function  signIn(){
   {
     auth.signOut();
     alert("SignOut Successfully from System");
+    window.location.reload(true);
   }
   
    ;

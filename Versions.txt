@@ -37,6 +37,9 @@ Functional Login-Logout.
 Contact Us page.
 Few changes in to Index.
 
+Version 0.6:
+---------------------
+Become Author page completed.
 
 
 
