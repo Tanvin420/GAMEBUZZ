@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GAMEBUZZ | Review</title>
-
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="img/logo1.png"> <!-- Favicon -->
+	<link rel="shortcut icon" href="img/logo1.png">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -70,15 +72,20 @@
 							  </li>
 							  
 							  <li><a href="./blog.html"> About</a></li>
+							  <li><a href="#">Login <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="login.html">SignIn</a></li>
+                                        <li><a href="signup.html">SignUp</a></li>
+                                    </ul>
+							  </li>
                             </ul>  
                         </nav>
                     </div>
                 </div>
                 <div class="col-sl-1" style="margin-top:50px;">
                     <div class="header__right" >
-                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
-                        <a href="./login.html"><span class="icon_profile"></span></a>
-						
+                       <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="./login.html" ><div id="color" style="color: red"><i class="material-icons" style="font-size:25px;" ><span id="loginState">person_off</span></i></div></a>
                     </div>
                 </div>
             </div>
@@ -120,6 +127,16 @@
                             <div class="anime__details__title">
                                 <h3>Valorant</h3>
                                 <span> Riot Games</span>
+						 <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0 offset-xl-0">
+                               <div class="card shadow text-center" style="background-color: #0B0C2A" >
+                             <div class="position-relative rounded-top progress-wrapper" data-color="#0B0C2A" style="background-color: #00BD09;">
+                               <div class="wave" data-progress="90%" style="bottom: 90%;"></div>
+                            </div>
+                             <div class="card-footer">
+                           <h4 class="card-title" style="color: aliceblue">Overall 90%</h4>
+                             </div>
+                             </div>
+                           </div>
                             </div>
                             <div class="anime__details__rating">
                                 <div class="rating">
@@ -138,7 +155,7 @@
 								</div>
 								<span>1.029 Votes</span>
                             </div>
-						    <div style="margin-top: 150px">
+						    <div>
 							<p>Valorant is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by an official release on June 2, 2020.</p>
 							</div>
                             <div class="anime__details__widget">
@@ -269,10 +286,10 @@
 				</div>
                 <div class="footer__nav" style="margin-top:50px;">
                     <ul>
-                        <li class="active"><a href="./index.html">Privacy policy</a></li>
-                        <li><a href="./categories.html">Become Author</a></li>
-                        <li><a href="./blog.html">Terms</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li class="active"><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Become Author</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
                     </ul>
 					
                 </div>
@@ -308,8 +325,11 @@
         <script src="js/jquery.slicknav.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+	   
+	<!-----firebase------>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
     <script>
         const firebaseConfig = {
           apiKey: "AIzaSyB36JuOa15kEjedPdMe0UfqeNgAV8-atxI",
@@ -326,9 +346,11 @@
         firebase.initializeApp(firebaseConfig);
         
         const db1=firebase.firestore();
+		const auth =  firebase.auth();
       </script>
 	
 	<script src="js/reviewComment.js"></script>
+	<script src="js/authentication.js"></script>
     </body>
 
     </html>

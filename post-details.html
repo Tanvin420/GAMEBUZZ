@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GAMEBUZZ | Post</title>
-
+     <!-- Favicon -->
+	<link rel="shortcut icon" href="img/logo1.png">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -70,15 +71,20 @@
 							  </li>
 							  
 							  <li><a href="./blog.html"> About</a></li>
+							  <li><a href="#">Login <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="login.html">SignIn</a></li>
+                                        <li><a href="signup.html">SignUp</a></li>
+                                    </ul>
+							  </li>
                             </ul>  
                         </nav>
                     </div>
                 </div>
                 <div class="col-sl-1" style="margin-top:50px;">
                     <div class="header__right" >
-                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
-                        <a href="./login.html"><span class="icon_profile"></span></a>
-						
+                       <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="./login.html" ><div id="color" style="color: red"><i class="material-icons" style="font-size:25px;" ><span id="loginState">person_off</span></i></div></a>
                     </div>
                 </div>
             </div>
@@ -110,7 +116,7 @@
                             <p>Has there been a game released in the last 20 years that’s been more influential than Grand Theft Auto III? From its establishment of the open-world sandbox fundamentals to its critical role in reshaping videogames into a more attractive medium for mature audiences, GTA III’s shadow still looms large over almost every facet of the artform. If any game deserved a definitive edition that allowed fans to relive that revolution without squinting to ignore ancient graphics, it’s this. And yet, series creator Rockstar Games has decided to pay tribute to this modern gaming monolith and its two equally acclaimed PS2-era sequels, Vice City and San Andreas, by producing a collection of re-releases that cuts more corners than a Yakuza Stinger in a Liberty City street race. At best this trilogy is ill-conceived and half-finished; at worst it’s straight-up broken. If this half-baked Definitive Edition is anything to go by, I have to wonder if Rockstar reveres its own games as much as the rest of us do.</p>
                         </div>
                         <div class="blog__details__item__text">
-                            <img src="img/blog/details/GTA_Triology.jpg" alt="">
+                            <img src="img/blog/details/GTA_Triology.jpg" alt="" style="max-width: 100%">
                             <p>There are some positives, mind you, but almost every welcome addition is implemented at the cost of some sort of buzz-killing compromise. It seems so antiquated that my original playthroughs with each of these three games were done with a paper map unfurled across my lap, so it’s very convenient that you’re now able to just hit pause to scan the full map of each game world and drop waypoint markers to your destination, like modern gamers would expect. However, you can’t override waypoints that are automatically created during a mission, like if you wanted to take a detour across town to an Ammunation or a Pay ‘n’ Spray perhaps, and the pathfinding can often get confused as it continually recalculates over the course of a journey, at times resembling something closer to a hastily scribbled signature than the shortest possible route.
 
 Similarly, the “GTAV-inspired modern controls” promised in this collection’s marketing have been applied somewhat unevenly over the three individual games. Weapon switching is improved across the board with the ability to use a shoulder button to bring up a weapon wheel, but auto-targeting feels far snappier in San Andreas than in GTA III and Vice City, and while you can circle-strafe while locked on to an enemy with a lighter weapon equipped, heavier machine guns and the like still root you to the spot and force you into a manually aimed first-person perspective regardless. The auto-targeting in GTA III and Vice City proved to be particularly sluggish whenever I found myself up close and personal with a group of enemies, which was fairly frequent given that enemy AI wasn't designed to use cover and just rushes you more often than not. Thus, in both games I found myself increasingly reliant on the use of sniper rifles to thin the herds from a distance rather than run headlong into yet another spasmodic shootout.</p>
@@ -204,10 +210,10 @@ Similarly, the “GTAV-inspired modern controls” promised in this collection�
 				</div>
                 <div class="footer__nav" style="margin-top:50px;">
                     <ul>
-                        <li class="active"><a href="./index.html">Privacy policy</a></li>
-                        <li><a href="./categories.html">Become Author</a></li>
-                        <li><a href="./blog.html">Terms</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li class="active"><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Become Author</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
                     </ul>
 					
                 </div>
@@ -243,8 +249,10 @@ Similarly, the “GTAV-inspired modern controls” promised in this collection�
         <script src="js/jquery.slicknav.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+	<!----------firebase---------->
 	    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>	
         <script>
         const firebaseConfig = {
           apiKey: "AIzaSyB36JuOa15kEjedPdMe0UfqeNgAV8-atxI",
@@ -261,10 +269,11 @@ Similarly, the “GTAV-inspired modern controls” promised in this collection�
         firebase.initializeApp(firebaseConfig);
         
         const db2=firebase.firestore();
+		const auth =  firebase.auth();
       </script>
 	
 	<script src="js/postComment.js"></script>
-
+    <script src="js/authentication.js"></script>
     </body>
 
     </html>

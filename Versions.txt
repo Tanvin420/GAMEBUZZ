@@ -31,4 +31,13 @@ Version 0.4:
 ---------------------
 Functinal comment section in post, review and video.
 
+Version 0.5:
+---------------------
+Functional Login-Logout.
+Contact Us page.
+Few changes in to Index.
+
+
+
+
 

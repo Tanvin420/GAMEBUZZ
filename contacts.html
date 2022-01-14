@@ -7,7 +7,7 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GAMEBUZZ | Sign Up</title>
+    <title>GAMEBUZZ | Contact US</title>
     <!-- Favicon -->
 	<link rel="shortcut icon" href="img/logo1.png">
     <!-- Google Font -->
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+	
 </head>
 
 <body>
@@ -32,7 +33,7 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
+   <header class="header">
 		<div style="background-color: #010003; box-shadow: 1px 1px 10px 5px #2AEF14" >
         <div class="container">
             <div class="row">
@@ -95,13 +96,12 @@
     <!-- Header End -->
 
     <!-- Normal Breadcrumb Begin -->
-    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg" style="height: 420px;text-shadow: -1px 1px 2px #000,1px 1px 2px #000,1px -1px 0 #000,-1px -1px 0 #000; ">
+    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg"  style="text-shadow: -1px 1px 2px #000,1px 1px 2px #000,1px -1px 0 #000,-1px -1px 0 #000;  height: 420px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="normal__breadcrumb__text">
-                        <h2 style="font-size: 100px; color: #000000; -webkit-text-stroke: 2px #00ED04;">Sign Up</h2>
-                      <p style="font-size: 30px;color: #FFFFFF; -webkit-text-stroke: 0.5px #000000; background-color: " class="text-center"><strong>Welcome to GAMEBUZZ</strong></p>
+                        <h2 style="font-size: 100px; text-shadow: 5px 2px #000000 ">Contact US</h2>
                     </div>
                 </div>
             </div>
@@ -109,46 +109,103 @@
     </section>
     <!-- Normal Breadcrumb End -->
 
-    <!-- Signup Section Begin -->
-    <section class="signup spad">
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
         <div class="container">
+			<div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="login__form">
-                        <h3>Sign Up</h3>
-                        <form action="#">
-                            <div class="input__item">
-                                <input type="text" placeholder="Email address" id="email_signup">
-                                <span class="icon_mail"></span>
-                            </div>
-                            <div class="input__item">
-                                <input type="text" placeholder="Your Name" id="name_signup">
-                                <span class="icon_profile"></span>
-                            </div>
-                            <div class="input__item">
-                                <input type="password" placeholder="Password" id="password_signup">
-                                <span class="icon_lock"></span>
-                            </div>
-                            <button type="submit" class="site-btn" onClick="signUp()">Sign Up Now</button>
-                        </form>
-                        <h5>Already have an account? <a href="./login.html">Log In!</a></h5>
-                    </div>
+				<div  class="col-md-6" style="opacity: 0.65; border: #16FF38; border-width: 3px;">
+					<iframe width="540" height="535" id="gmap_canvas" src="https://maps.google.com/maps?q=23.700804633735014,%2090.43398004239029&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:535px;width:540px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:535px;width:540px;}</style>				
+				</div>
+				
+				<div class="col-md-6" style="text-shadow: 0.5px 0.5px #748FF7;text-decoration:inherit">
+					<div class="contact-box ml-3">
+            <h1 class="font-weight-bold" style="color: #FCFCFC;text-align: center;">Quick Contact</h1>
+            <form class="mt-4" id="contactInfo">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+					 <b style="text-align: left;color: aliceblue;font-size: 25px;">Name:</b>
+                    <input class="form-control" type="text" id="name" placeholder="name">
+                  </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login__social__links">
-                        <h3>Login With:</h3>
-                        <ul>
-                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With Facebook</a>
-                            </li>
-                            <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
-                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+					  <b style="text-align: left;color: aliceblue;font-size: 25px;">Email:</b>
+                    <input class="form-control" type="email" id="email" placeholder="email address">
+                  </div>
                 </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+					  <b style="text-align: left;color: aliceblue;font-size: 25px;">Phone:</b>
+                    <input class="form-control" type="text" id="phone" placeholder="phone">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mt-2">
+					  <b style="text-align: left;color: aliceblue;font-size: 25px;">Message:</b>
+                    <textarea class="form-control" rows="3" id="message" placeholder="message"></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-3 offset-xl-4" style="align-items:center">
+                  <button type="submit" class="btn-lg" style="border-radius: 20px; background-color: #64CD8A; border-color: #904C69"><span> SUBMIT</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card mt-4 border-0 mb-4">
+            <div class="row" style="background:#0B0C2A;">
+              <div class="col-lg-4 col-md-4">
+                <div class="card-body d-flex align-items-center c-detail pl-0">
+                  <div class="mr-3 align-self-center">
+                    <i class="material-icons" style="font-size:90px; color: #3AFF00 ">place</i>
+                  </div>
+                  <div class="">
+                    <h6 class="font-weight-medium" style="color: aliceblue">Address</h6>
+                    <p class=""style="color: #C1C5C7">133,West Dholairpar
+                      <br> Dhaka-1204</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="card-body d-flex align-items-center c-detail">
+                  <div class="mr-3 align-self-center">
+                    <i class="material-icons" style="font-size:90px;color: #3AFF00 ">phone</i>
+                  </div>
+                  <div class="">
+                    <h6 class="font-weight-medium" style="color: aliceblue">Phone</h6>
+                    <p class=""style="color: #C1C5C7">01930261150
+                      <br> 01915142380</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="card-body d-flex align-items-center c-detail">
+                  <div class="mr-3 align-self-center">
+                    <i class="material-icons" style="font-size:90px; color: #3AFF00 ">email</i>
+                  </div>
+                  <div class="">
+                    <h6 class="font-weight-medium" style="color: aliceblue">Email</h6>
+                    <p class=""style="color: #C1C5C7">
+                      mdtanvinmdjamaluddintanvin@hotmail.com
+                      <br> lyricalstudio133@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+			</div>		
+	
+				</div>
+				
+			</div>
+			</div>
         </div>
     </section>
-    <!-- Signup Section End -->
+    <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -197,21 +254,9 @@
         </div>
     </div>
     <!-- Search model end -->
-
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/player.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-	<!-----firebase------>
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-    
+    <!-- firebase -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
 	<script>
         const firebaseConfig = {
           apiKey: "AIzaSyB36JuOa15kEjedPdMe0UfqeNgAV8-atxI",
@@ -222,15 +267,45 @@
           messagingSenderId: "90398885374",
           appId: "1:90398885374:web:e9835ee5653a5fbe8d2caf",
           measurementId: "G-LS91N1YW40"
-			
         };
-		 firebase.initializeApp(firebaseConfig);
-		
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        const db=firebase.firestore();
+      </script>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contactInfo.js"></script>
+<!-----firebase------>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyB36JuOa15kEjedPdMe0UfqeNgAV8-atxI",
+          authDomain: "gamebuzz-8aad2.firebaseapp.com",
+          databaseURL: "https://gamebuzz-8aad2-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "gamebuzz-8aad2",
+          storageBucket: "gamebuzz-8aad2.appspot.com",
+          messagingSenderId: "90398885374",
+          appId: "1:90398885374:web:e9835ee5653a5fbe8d2caf",
+          measurementId: "G-LS91N1YW40"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
 		const auth =  firebase.auth();
       </script>
-	
-	 <script src="js/authentication.js"></script>
-
+    <script src="js/authentication.js"></script>
 </body>
 
 </html>
